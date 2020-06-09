@@ -88,8 +88,8 @@ static Key keys[] = {
 	{ MODKEY,              XK_period,               focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,    XK_comma,                tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,    XK_period,               tagmon,         {.i = +1 } },
-	{ 0,                   XF86XK_AudioRaiseVolume,	spawn,		    SHCMD("pamixer --allow-boost -i 1; xsetroot -name \"`$HDD_HOME/Documents/Programming/Scripting/getStatusBar`\"") },
-	{ 0,                   XF86XK_AudioLowerVolume,	spawn,		    SHCMD("pamixer --allow-boost -d 1; xsetroot -name \"`$HDD_HOME/Documents/Programming/Scripting/getStatusBar`\"") },
+	{ 0,                   XF86XK_AudioRaiseVolume,	spawn,		    SHCMD("pamixer --allow-boost -i 1; xsetroot -name \"`getStatusBar.sh`\"") },
+	{ 0,                   XF86XK_AudioLowerVolume,	spawn,		    SHCMD("pamixer --allow-boost -d 1; xsetroot -name \"`getStatusBar.sh`\"") },
 	{ 0,                   XK_Print,	            spawn,		    SHCMD("spectacle") },
 	TAGKEYS(               XK_q,                    0)
 	TAGKEYS(               XK_d,                    1)
