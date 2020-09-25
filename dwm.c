@@ -1831,7 +1831,7 @@ tile(Monitor *m)
 		if (i < m->nmaster) {
 			h = (m->wh - my) / (MIN(n, m->nmaster) - i);
 			if (n == 1)
-				resize(c, m->wx - c->bw, m->wy, m->ww, m->wh, False);
+				resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
 			else
 				resize(c, m->wx - c->bw, m->wy + my, mw - c->bw, h - c->bw, False);
 			my += HEIGHT(c) - c->bw;
